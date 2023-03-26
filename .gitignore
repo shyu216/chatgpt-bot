@@ -1,0 +1,7 @@
+wechat-chatgpt/node_modules
+mirai/logs
+mirai/bots
+chatgpt/python*
+
+*.cfg
+!config.example.example.cfg
