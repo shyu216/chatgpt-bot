@@ -10,19 +10,23 @@ from graia.ariadne.message.chain import MessageChain
 async def handle_client(respond: Callable, session_id: str, message: str, chain: MessageChain = MessageChain("Unsupported"), is_manager: bool = False):
     uri="ws://localhost:14514"
 
-    async with websockets.connect(uri) as websocket:
+    try:
+        async with websockets.connect(uri) as websocket:
 
-        msg=f"{session_id}:::{message}:::{is_manager}"
+            msg=f"{session_id}:::{message}:::{is_manager}"
 
-        await websocket.send(msg)
+            await websocket.send(msg)
 
-        logger.info(f"send: {msg}")
+            logger.info(f"send: {msg}")
 
-        resp=await websocket.recv()
+            resp=await websocket.recv()
 
-        logger.info(f"recv: {resp}")
+            logger.info(f"recv: {resp}")
 
-        await respond(resp)
+            await respond(resp)
+
+    except Exception as e:
+        logger.error(e)
 
     
 

@@ -13,27 +13,28 @@ from constants import botManager
 
 
 async def handle_connection(websocket):
+    try:
+        req = await websocket.recv()
 
-    req = await websocket.recv()
+        name,msg,is_manager=req.split(":::")
+        is_manager=bool(is_manager)
 
-    name,msg,is_manager=req.split(":::")
-    is_manager=bool(is_manager)
+        logger.info(f"recv: {msg}")
 
-    logger.info(f"recv: {msg}")
+        async def response(msg: str, websocket=websocket):
 
-    async def response(msg: str, websocket=websocket):
+            # one socket connection can only has one send
+            # may improve in the future
+            if "我还在" in msg:
+                logger.info(msg)
+                return
+            
+            await websocket.send(msg)
 
-        # one socket connection can only has one send
-        # may improve in the future
-        if "我还在" in msg:
-            logger.info(msg)
-            return
-        
-        await websocket.send(msg)
-
-        logger.info(f"send: {msg}")
-
-    await handle_message(response, name, msg, is_manager=is_manager)
+            logger.info(f"send: {msg}")
+        await handle_message(response, name, msg, is_manager=is_manager)
+    except Exception as e:
+        logger.error(e)
 
 
 async def main():
