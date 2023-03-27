@@ -19,3 +19,5 @@ It is built on [wechat-chatgpt](https://github.com/fuergaosi233/wechat-chatgpt.g
 QQ          |  Wechat
 :-------------------------:|:-------------------------:
  <img src="img/qq.jpg" width="200"/>  |  <img src="img/wechat.jpg" width="200"/>
+
+Actually, Sanya is not the southest city...
