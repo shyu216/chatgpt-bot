@@ -16,4 +16,8 @@ It is build on
 - socket-server
 
 ### Snapshots
-[](img/qq.jpg) [](img/wechat.jpg)
+<!-- ![](img/qq.jpg | width=100)![](img/wechat.jpg | width=100) -->
+
+QQ          |  Wechat
+:-------------------------:|:-------------------------:
+ <img src="img/qq.jpg" width="200"/>  |  <img src="img/wechat.jpg" width="200"/>
