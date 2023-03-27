@@ -1,6 +1,6 @@
 It is build on
 
-[wechat-chatgpt](ttps://github.com/fuergaosi233/wechat-chatgpt.git)
+[wechat-chatgpt](https://github.com/fuergaosi233/wechat-chatgpt.git)
 
 [chatgpt-mirai-qq-bot](https://github.com/lss233/chatgpt-mirai-qq-bot.git)
 
@@ -14,3 +14,6 @@ It is build on
 
 # ChatGPT Side
 - socket-server
+
+### Snapshots
+[](img/qq.jpg)[](img/wechat.jpg)
