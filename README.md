@@ -1,21 +1,19 @@
-It is build on
+# Intro
 
-[wechat-chatgpt](https://github.com/fuergaosi233/wechat-chatgpt.git)
+It is built on [wechat-chatgpt](https://github.com/fuergaosi233/wechat-chatgpt.git) and [chatgpt-mirai-qq-bot](https://github.com/lss233/chatgpt-mirai-qq-bot.git).
 
-[chatgpt-mirai-qq-bot](https://github.com/lss233/chatgpt-mirai-qq-bot.git)
-
-# QQ Side
+## QQ Side
 - bot-qq
 - socket-client
 
-# Wechat Side
+## Wechat Side
 - bot-wechat
 - socket-client
 
-# ChatGPT Side
+## ChatGPT Side
 - socket-server
 
-### Snapshots
+## 
 <!-- ![](img/qq.jpg | width=100)![](img/wechat.jpg | width=100) -->
 
 QQ          |  Wechat
