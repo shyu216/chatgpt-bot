@@ -1,6 +1,6 @@
 # Intro
 
-It is built on [wechat-chatgpt](https://github.com/fuergaosi233/wechat-chatgpt.git) and [chatgpt-mirai-qq-bot](https://github.com/lss233/chatgpt-mirai-qq-bot.git).
+It is built on [wechat-chatgpt](https://github.com/fuergaosi233/wechat-chatgpt.git) and [chatgpt-mirai-qq-bot](https://github.com/lss233/chatgpt-mirai-qq-bot.git). I wrote a simple socket to combine them.
 
 ## QQ Side
 - bot-qq
